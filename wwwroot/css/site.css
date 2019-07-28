@@ -5,6 +5,7 @@ html,
 body {
   /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
   font-family: 'Mountains of Christmas', cursive;
+  font-size: 16pt;
 }
 
 app {
@@ -21,6 +22,10 @@ app {
 
 .main {
   flex: 1;
+}
+
+ul {
+  list-style: none;
 }
 
 .main .top-row {
@@ -97,6 +102,15 @@ app {
 
 .validation-message {
   color: red;
+}
+
+.text-limit {
+  max-width: 7rem;
+}
+
+.cat-image-size {
+  width: 12rem;
+  height: auto;
 }
 
 @media (max-width: 767.98px) {

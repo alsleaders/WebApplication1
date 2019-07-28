@@ -186,7 +186,6 @@ C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclara
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\Pages\_Imports.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
-C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\WebApplication1.dll
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\WebApplication1.TagHelpers.input.cache
@@ -200,7 +199,6 @@ C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\Pages\
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\Pages\_Imports.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\Shared\MainLayout.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\_Imports.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\WebApplication1.AssemblyInfoInputs.cache
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\WebApplication1.AssemblyInfo.cs

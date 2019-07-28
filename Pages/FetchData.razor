@@ -1,11 +1,14 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
+@using WebApplication1.Pages.Models
+@using System.Net.Http
+@using System.Net.Http.Headers
 
 <h1>Octocat List</h1>
 
-<p>This component demonstrates fetching data the json file and displaying it.</p>
+<p>This component demonstrates fetching data from an api and displaying it.</p>
 
-@if (forecasts == null)
+@if (Octocats == null)
 {
     <p><em>Loading...</em></p>
 }
@@ -15,19 +18,19 @@ else
         <thead>
             <tr>
                 <th>Number</th>
-                <th>Name</th>
+                <th class="text-limit">Name</th>
                 <th>Image</th>
                 <th>Link</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var forecast in forecasts)
+            @foreach (var cat in Octocats.Data)
             {
                 <tr>
-                    <td>@forecast.Number</td>
-                    <td>@forecast.Name</td>
-                    <td>@forecast.Image</td>
-                    <td>@forecast.Link</td>
+                    <td>@cat.Number</td>
+                    <td class="text-limit">@cat.Name</td>
+                    <td><img class="cat-image-size" src="@cat.Image"/></td>
+                    <td><a href="@cat.Link">@cat.Link</a></td>
                 </tr>
             }
         </tbody>
@@ -35,21 +38,11 @@ else
 }
 
 @code {
-    WeatherForecast[] forecasts;
+
+    public OctocatData Octocats {get;set;} = new OctocatData();
 
     protected override async Task OnInitAsync()
     {
-        forecasts = await Http.GetJsonAsync<WeatherForecast[]>("sample-data/weather.json");
-    }
-
-    class WeatherForecast
-    {
-        public int Number { get; set; }
-
-        public string Name { get; set; }
-
-        public string Image { get; set; }
-
-        public string Link { get; set; }
+        Octocats = await Http.GetJsonAsync<OctocatData>("https://sdg-octodex.herokuapp.com/");
     }
 }
