@@ -1,0 +1,51 @@
+@page "/fetchanother"
+@inject HttpClient Http
+@using System.Net.Http
+@using System.Net.Http.Headers
+
+
+
+<h1>Fetching Another API</h1>
+
+@if (places == null) 
+{
+  <p><em>Loading ...accordion</em></p>
+}
+else
+{
+      <ul class="places-list">
+        @foreach (var p in places)
+        {
+          <li>In @p.Location you can see @p.Name</li>
+          <li>@p.Description</li>
+          <li><img src="@p.Img" /></li> <br />
+          <!-- <li><a href="${LINK}@p.Path">Want to know more?</a></li> -->
+          <hr/>
+        }
+      </ul>  
+}
+
+@code {
+  const string LINK = "https://www.atlasobscura.com";
+
+  AOList[] places;
+
+  protected override async Task OnInitAsync()
+  {
+    places = await Http.GetJsonAsync<AOList[]>("sample-data/atlas.json");
+  }
+
+  class AOList
+  {
+    public string Location { get; set; }
+
+    public string Name { get; set; }
+
+    public string Img { get; set; }
+
+    public string Path { get; set; }
+
+    public string Description { get; set; }
+  }
+
+}
