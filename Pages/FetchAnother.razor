@@ -19,7 +19,7 @@ else
           <li>In @p.Location you can see @p.Name</li>
           <li>@p.Description</li>
           <li><img src="@p.Img" /></li> <br />
-          <!-- <li><a href="${LINK}@p.Path">Want to know more?</a></li> -->
+          <li><a href="@BuildUrl(p.Path)">Want to know more?</a></li>
           <hr/>
         }
       </ul>  
@@ -27,6 +27,8 @@ else
 
 @code {
   const string LINK = "https://www.atlasobscura.com";
+
+  private string BuildUrl(string thing) => $"{LINK}{thing}";
 
   AOList[] places;
 
