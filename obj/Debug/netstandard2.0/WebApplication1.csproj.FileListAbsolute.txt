@@ -242,3 +242,5 @@ C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\blazor\input
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\blazor\blazor.boot.json
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\Pages\FetchAnother.razor.g.cs
 C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\Pages\FetchAnother.razor.g.cs
+C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\RazorDeclaration\Pages\Geography.razor.g.cs
+C:\Users\palep\sdg\sandbox\WebApplication1\obj\Debug\netstandard2.0\Razor\Pages\Geography.razor.g.cs

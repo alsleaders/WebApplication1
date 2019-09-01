@@ -1,10 +1,12 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 
 html,
 body {
-  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  font-family: 'Mountains of Christmas', cursive;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Mountains of Christmas', cursive; */
+  font-family: 'Merriweather', serif;
   font-size: 16pt;
 }
 

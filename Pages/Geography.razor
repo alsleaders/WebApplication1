@@ -1,0 +1,36 @@
+@page "/geography"
+@inject HttpClient Http
+@using WebApplication1.Pages.Models
+@using System.Net.Http
+@using System.Net.Http.Headers
+
+<h1>Geography Facts</h1>
+
+<!-- <h3>Hopefully this will display 10 geography trivia facts</h3> -->
+
+@if (GeographyFacts == null)
+{
+  <p><em>Where in the world</em></p>
+}
+else
+{
+  @foreach (var item in GeographyFacts.Results)
+  {
+      <h5>@item.Question</h5>
+      <br />
+      <button>Show</button>
+      <p>@item.Correct_answer</p>
+      <br />
+      <!-- <p>@item.Incorrect_Answers</p> -->
+  }
+}
+
+@code {
+
+  public GeographyData GeographyFacts {get; set;} = new GeographyData();
+
+  protected override async Task OnInitAsync()
+  {
+    GeographyFacts = await Http.GetJsonAsync<GeographyData>("https://opentdb.com/api.php?amount=10&category=22&difficulty=medium&type=multiple");
+  }
+}
