@@ -16,12 +16,12 @@ else
 {
   @foreach (var item in GeographyFacts.Results)
   {
-      <h5>@item.Question</h5>
+      <h3>@item.Question</h3>
       <br />
-      <button>Show</button>
-      <p>@item.Correct_answer</p>
+      <h4 class="border">Hover for answer-->
+      <div class="o-hide">@item.Correct_answer</div></h4>
       <br />
-      <!-- <p>@item.Incorrect_Answers</p> -->
+      <!-- <p>@item.Incorrect_answers</p> -->
   }
 }
 
